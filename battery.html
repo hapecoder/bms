@@ -36,6 +36,15 @@
  
 
     }
+    .batteryName {
+    position: relative;
+    top: -30px;
+
+    font-size: 12px;
+    margin: 0px;
+      
+
+    }
 
     .batteryIconHead {
    position: relative;
@@ -51,7 +60,8 @@
     .batteryIconProgress {
       position: relative;
     height: 30px;
-    top:-24px;
+    top:-42px;
+    margin: 0px;
     
     
     }
@@ -59,13 +69,13 @@
     .batteryIconContent {
     position: relative;
     font-size: 12px;
-    left: 30px;
-    top: -54px;
+    left: 35%;
+    top: -70px;
+
+    
     }
 
-    .beginButton {
-    margin-top:100px;
-    }
+
 
   </style>
 
@@ -97,23 +107,57 @@
     </div>
 
       
-          <div class="col-md-8" style=" text-align: center">
+          <div class="col-md-2" style=" text-align: center">
             <div class="batteryIcon">
                     <span class="batteryIconBody">
-                        <span class="batteryIconProgress" id="batteryIconProgress" ></span>
-                        <label class="batteryIconContent" id="batteryIconContent"></label>
+                        <p class="batteryName">电池1</p>
+                        <span class="batteryIconProgress" id="batteryIconProgress1" ></span>
+                        <label class="batteryIconContent" id="batteryIconContent1"></label>
                         <span class="batteryIconHead"></span>
                     </span>
             </div>
 
          </div>
+         <div class="col-md-2" style=" text-align: center">
+          <div class="batteryIcon">
+                  <span class="batteryIconBody">
+                      <p class="batteryName">电池2</p>
+                      <span class="batteryIconProgress" id="batteryIconProgress2" ></span>
+                      <label class="batteryIconContent" id="batteryIconContent2">70%</label>
+                      <span class="batteryIconHead"></span>
+                  </span>
+          </div>
+
+       </div>
+       <div class="col-md-2" style=" text-align: center">
+        <div class="batteryIcon">
+                <span class="batteryIconBody">
+                    <p class="batteryName">电池3</p>  
+                    <span class="batteryIconProgress" id="batteryIconProgress3" ></span>
+                    <label class="batteryIconContent" id="batteryIconContent3">50%</label>
+                    <span class="batteryIconHead"></span>
+                </span>
+        </div>
+
+     </div>  
+     <div class="col-md-2" style=" text-align: center">
+      <div class="batteryIcon">
+              <span class="batteryIconBody">
+                  <p class="batteryName">电池4</p>  
+                  <span class="batteryIconProgress" id="batteryIconProgress4" ></span>
+                  <label class="batteryIconContent" id="batteryIconContent4">10%</label>
+                  <span class="batteryIconHead"></span>
+              </span>
+      </div>
+
+   </div>     
 
 
   </div>
 </div>
 
 <div class="jumbotron text-center" style="margin-bottom:0">
-  <p> © Copyright 2019 </p>
+  <p> 宇宙第一BMS ©Copyright 2019  </p>
 </div>
 
 </body>
