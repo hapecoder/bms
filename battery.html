@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>BMS</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' name='viewport' >
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="js/jquery-3.1.1.min.js" ></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.flot.js" ></script>
+  <script src="js/flot-charts.js" ></script>
+  <script src="js/highcharts.js" ></script>
+  <script src="js/battery.js" ></script>
+  <style> 
+  .fakeimg {
+      height: 100px;
+      background: #aaa;
+  } 
+    .batteryIcon {
+    margin: 100px auto;
+    width: 100px;
+    }
+    span {
+    display: block;
+    }
+ 
+
+    .batteryIconBody {
+    position: relative;
+    width: 100px;
+    height: 42px;
+    border: 6px solid #333;
+    border-radius: 2px;
+ 
+
+    }
+
+    .batteryIconHead {
+   position: relative;
+   height: 15px;
+   width: 8px;
+   background: #333;
+   display: block;
+    position: absolute;
+    top: 7px;
+    left: 95px;
+    }
+
+    .batteryIconProgress {
+      position: relative;
+    height: 30px;
+    top:-24px;
+    
+    
+    }
+
+    .batteryIconContent {
+    position: relative;
+    font-size: 12px;
+    left: 30px;
+    top: -54px;
+    }
+
+    .beginButton {
+    margin-top:100px;
+    }
+
+  </style>
+
+
+</head>
+<body>
+
+<div class="jumbotron jumbotron-fluid text-center" style="margin-bottom:0">
+  <h1>BMS前端展示界面</h1>
+
+</div>
+
+
+<div class="container" style="margin-top:30px;margin-bottom:50px">
+  <div class="row">
+    <div class="col-md-4">
+      <ul class="nav nav-pills flex-column">
+        <li class="nav-item" style="height: 50px;">
+          <a class="nav-link" href="index.html">列表</a>
+        </li>
+        <li class="nav-item" style="height: 50px;">
+          <a class="nav-link " href="tubiao.html">图表</a>
+        </li>
+        <li class="nav-item" style="height: 50px;">
+          <a class="nav-link active" href="battery.html">电池</a>
+        </li>
+      </ul>
+      <hr class="d-sm-none">
+    </div>
+
+      
+          <div class="col-md-8" style=" text-align: center">
+            <div class="batteryIcon">
+                    <span class="batteryIconBody">
+                        <span class="batteryIconProgress" id="batteryIconProgress" ></span>
+                        <label class="batteryIconContent" id="batteryIconContent"></label>
+                        <span class="batteryIconHead"></span>
+                    </span>
+            </div>
+
+         </div>
+
+
+  </div>
+</div>
+
+<div class="jumbotron text-center" style="margin-bottom:0">
+  <p> © Copyright 2019 </p>
+</div>
+
+</body>
+</html>
