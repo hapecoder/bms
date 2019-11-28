@@ -14,10 +14,7 @@
   <script src="js/highcharts.js" ></script>
   <script src="js/battery.js" ></script>
   <style> 
-  .fakeimg {
-      height: 100px;
-      background: #aaa;
-  } 
+
     .batteryIcon {
     margin: 100px auto;
     width: 100px;
@@ -91,67 +88,115 @@
 
 <div class="container" style="margin-top:30px;margin-bottom:50px">
   <div class="row">
-    <div class="col-md-4">
-      <ul class="nav nav-pills flex-column">
-        <li class="nav-item" style="height: 50px;">
-          <a class="nav-link" href="index.html">列表</a>
-        </li>
-        <li class="nav-item" style="height: 50px;">
-          <a class="nav-link " href="tubiao.html">图表</a>
-        </li>
-        <li class="nav-item" style="height: 50px;">
-          <a class="nav-link active" href="battery.html">电池</a>
-        </li>
-      </ul>
-      <hr class="d-sm-none">
+    <div class="col-md-3">
+        <ul class="nav nav-pills flex-column">
+          <li class="nav-item" style="height: 50px;">
+            <a class="nav-link" href="index.html">列表</a>
+          </li>
+          <li class="nav-item" style="height: 50px;">
+            <a class="nav-link " href="tubiao.html">图表</a>
+          </li>
+          <li class="nav-item" style="height: 50px;">
+            <a class="nav-link active" href="battery.html">电池</a>
+          </li>
+         </ul>
+   
     </div>
 
-      
-          <div class="col-md-2" style=" text-align: center">
+    <div class="col-md-9" style="left:15%;">  
+        <div class="row" style="">
+            <div class="col-md-2" style=" text-align: center">
+                <div class="batteryIcon">
+                        <span class="batteryIconBody">
+                            <p class="batteryName">电池1</p>
+                            <span class="batteryIconProgress" id="batteryIconProgress1" ></span>
+                            <label class="batteryIconContent" id="batteryIconContent1"></label>
+                            <span class="batteryIconHead"></span>
+                        </span>
+                </div>
+
+              </div>
+            <div class="col-md-2" style=" text-align: center">
+              <div class="batteryIcon">
+                      <span class="batteryIconBody">
+                          <p class="batteryName">电池2</p>
+                          <span class="batteryIconProgress" id="batteryIconProgress2" ></span>
+                          <label class="batteryIconContent" id="batteryIconContent2">70%</label>
+                          <span class="batteryIconHead"></span>
+                      </span>
+              </div>
+
+            </div>
+            <div class="col-md-2" style=" text-align: center">
             <div class="batteryIcon">
                     <span class="batteryIconBody">
-                        <p class="batteryName">电池1</p>
-                        <span class="batteryIconProgress" id="batteryIconProgress1" ></span>
-                        <label class="batteryIconContent" id="batteryIconContent1"></label>
+                        <p class="batteryName">电池3</p>  
+                        <span class="batteryIconProgress" id="batteryIconProgress3" ></span>
+                        <label class="batteryIconContent" id="batteryIconContent3">50%</label>
                         <span class="batteryIconHead"></span>
                     </span>
             </div>
 
-         </div>
-         <div class="col-md-2" style=" text-align: center">
+            </div>  
+              <div class="col-md-2" style=" text-align: center">
           <div class="batteryIcon">
                   <span class="batteryIconBody">
-                      <p class="batteryName">电池2</p>
-                      <span class="batteryIconProgress" id="batteryIconProgress2" ></span>
-                      <label class="batteryIconContent" id="batteryIconContent2">70%</label>
+                      <p class="batteryName">电池4</p>  
+                      <span class="batteryIconProgress" id="batteryIconProgress4" ></span>
+                      <label class="batteryIconContent" id="batteryIconContent4">10%</label>
                       <span class="batteryIconHead"></span>
                   </span>
           </div>
 
-       </div>
-       <div class="col-md-2" style=" text-align: center">
+            </div> 
+        </div>    
+        <div class="row" style="margin-top: -150px;">
+            <div class="col-md-2" style=" text-align: center">
+              <div class="batteryIcon">
+                      <span class="batteryIconBody">
+                          <p class="batteryName">电池5</p>
+                          <span class="batteryIconProgress" id="batteryIconProgress1" ></span>
+                          <label class="batteryIconContent" id="batteryIconContent1" >99%</label>
+                          <span class="batteryIconHead"></span>
+                      </span>
+              </div>
+  
+            </div>
+            <div class="col-md-2" style=" text-align: center">
+              <div class="batteryIcon">
+                    <span class="batteryIconBody">
+                        <p class="batteryName">电池6</p>
+                        <span class="batteryIconProgress" id="batteryIconProgress2" ></span>
+                        <label class="batteryIconContent" id="batteryIconContent2">70%</label>
+                        <span class="batteryIconHead"></span>
+                    </span>
+            </div>
+  
+            </div>
+            <div class="col-md-2" style=" text-align: center">
+              <div class="batteryIcon">
+                  <span class="batteryIconBody">
+                      <p class="batteryName">电池7</p>  
+                      <span class="batteryIconProgress" id="batteryIconProgress3" ></span>
+                      <label class="batteryIconContent" id="batteryIconContent3">50%</label>
+                      <span class="batteryIconHead"></span>
+                  </span>
+          </div>
+  
+            </div>  
+            <div class="col-md-2" style=" text-align: center">
         <div class="batteryIcon">
                 <span class="batteryIconBody">
-                    <p class="batteryName">电池3</p>  
-                    <span class="batteryIconProgress" id="batteryIconProgress3" ></span>
-                    <label class="batteryIconContent" id="batteryIconContent3">50%</label>
+                    <p class="batteryName">电池8</p>  
+                    <span class="batteryIconProgress" id="batteryIconProgress4" ></span>
+                    <label class="batteryIconContent" id="batteryIconContent4">10%</label>
                     <span class="batteryIconHead"></span>
                 </span>
         </div>
-
-     </div>  
-     <div class="col-md-2" style=" text-align: center">
-      <div class="batteryIcon">
-              <span class="batteryIconBody">
-                  <p class="batteryName">电池4</p>  
-                  <span class="batteryIconProgress" id="batteryIconProgress4" ></span>
-                  <label class="batteryIconContent" id="batteryIconContent4">10%</label>
-                  <span class="batteryIconHead"></span>
-              </span>
-      </div>
-
-   </div>     
-
+  
+            </div> 
+        </div>   
+    </div>     
 
   </div>
 </div>

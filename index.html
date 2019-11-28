@@ -1,7 +1,7 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>BMS</title>
+  <title>用户登录</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -9,15 +9,30 @@
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/highcharts.js" ></script>
-  <style> 
-  .fakeimg {
-      height: 100px;
-      background: #aaa;
-  } 
-  </style>
-
-
+  <style>
+        .container {
+          margin-top: 120px;
+          padding-bottom: 20px;
+          /*border: 1px solid blue;*/
+        }
+        .mylogin {
+          width: 350px;
+          padding: 20px;
+          padding-top: 5px;
+          margin: 0 auto;
+          border: 1px solid #eee;
+          background-color: #fafad2;
+        }
+        h3 {
+          margin-bottom: 20px;
+        }
+        /*.container form {
+          border: 1px solid red;
+        }*/
+    </style>
+ 
 </head>
+
 <body>
 
 <div class="jumbotron jumbotron-fluid text-center" >
@@ -26,74 +41,30 @@
 </div>
 
 
-<div class="container" style="margin-top:30px">
-  <div class="row">
-    <div class="col-md-4" >
-      <ul class="nav nav-pills flex-column">
-        <li class="nav-item" style="height: 50px;">
-          <a class="nav-link active" href="#">列表</a>
-        </li>
-        <li class="nav-item" style="height: 50px;">
-          <a class="nav-link" href="tubiao.html">图表</a>
-        </li>
-        <li class="nav-item" style="height: 50px;">
-          <a class="nav-link" href="battery.html">电池</a>
-        </li>
-      </ul>
-      <hr class="d-sm-none">
-    </div>
-
-      
-        <div class="col-md-8 ">
-          <table class="table">
-            <thead>
-              <tr>
-                <th> 时间</th>
-                <th>电流/A</th>
-                <th>温度/℃ </th>
-                <th>SOC/%</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><script>var d=new Date().getTime()+8*3600*1000;
-                    d=Highcharts.dateFormat('%H:%M:%S', d) 
-                    document.write(d);</script> </td>
-                <td>-5</td>
-                <td>20</td>
-                <td> 98</td>
-              </tr>
-              <tr >
-                  <td>2</td>
-                  <td>-5</td>
-                  <td>22</td>
-                  <td> 98</td>
-              </tr>
-              <tr >
-                  <td>3</td>
-                  <td>-5</td>
-                  <td>22</td>
-                  <td> 98</td>
-              </tr>
-              <tr >
-                  <td>4</td>
-                  <td>-5</td>
-                  <td>23</td>
-                  <td> 98</td>
-              </tr>
-              <tr style="background-color: azure;" >
-                  <td>5</td>
-                  <td>-5</td>
-                  <td>24</td>
-                  <td> 97</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-
-  </div>
+<div class="container;enter-block" style="margin:60px">
+        <form action="index.html" class="mylogin" method="get">
+          <h3 class="text-center">用户登录</h3>
+          <div class="form-group">
+            <div class="input-group">
+              <div class="input-group-addon">
+                <span class="glyphicon glyphicon-user"></span>
+              </div>
+              <input type="text" name="username" class="form-control" required>
+            </div>
+          </div>
+          <div class="form-group">
+             <div class="input-group">
+              <div class="input-group-addon">
+                <span class="glyphicon glyphicon-lock"></span>
+              </div>
+              <input type="password" name="password" class="form-control" required>
+             </div>
+          </div>
+          <input type="submit" class="btn btn-primary form-control" >  
+        </form>
 </div>
+
+
 
 <div class="jumbotron text-center" style="margin-bottom:0">
   <p> 宇宙第一BMS ©Copyright 2019 </p>
