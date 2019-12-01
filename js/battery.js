@@ -4,22 +4,24 @@ window.onload = function () {
 }
 //测试开始
 function testBegin(val) {
-    var bcontent = document.getElementById("batteryIconProgress1");
-    var label = document.getElementById("batteryIconContent1");
+    var bcontent1 = document.getElementById("batteryIconProgress1");
+    var label1 = document.getElementById("batteryIconContent1");
+    var bat7=document.getElementById("battery7");
+
     for (var i = val; i <= 100; i++) {
-        bcontent.style.setProperty('width',  i+'%');
-        if (i <= 20) {
-              bcontent.style.setProperty('background', '#ff0000');
-      }
-         if (i > 20) {
-              bcontent.style.setProperty('background', '#ffd800');
-      }
-         if (i > 60) {
-              bcontent.style.setProperty('background', '#00ff21');
-      }
-       label.innerText = ((i) + "%");
-        window.setTimeout("testBegin(" + ++i + ")", 200)
-       break;
+        bcontent1.style.setProperty('width',  i+'%');
+        color1=batteryColor(i);
+        bcontent1.style.setProperty('background', color1);
+        label1.innerText = i+'%';
+
+        cname7=Findcname(i);
+        bat7.style.setProperty('width',i+'%');
+        bat7.className=cname7;
+        bat7.innerText=i+'%';
+
+
+        window.setTimeout("testBegin(" + ++i + ")", 200);
+        break
       }
 
 
@@ -51,7 +53,24 @@ function testBegin(val) {
         bcontent4.style.setProperty('background', color4);
         
        label4.innerText = i4+'%';
+
+
+
+
+
+
+
+    var bat8=document.getElementById("battery8");
+    bat8.style.setProperty('width','99%');
+    bat8.className='progress-bar progress-bar-striped progress-bar-animated bg-success';
+    bat8.innerText='99%';
+
+
+
+
 }
+
+
 
 
 function batteryColor(x){
@@ -67,4 +86,18 @@ function batteryColor(x){
           }
     return color
 }
-    
+
+function Findcname(x){
+    var cname='';
+             if (x<= 30) {
+                  cname='progress-bar progress-bar-striped progress-bar-animated bg-danger';
+          }
+             if (x > 30) {
+                  cname='progress-bar progress-bar-striped progress-bar-animated bg-warning';
+          }
+             if (x > 60) {
+                  cname='progress-bar progress-bar-striped progress-bar-animated bg-success';
+          }
+    return cname
+}
+
